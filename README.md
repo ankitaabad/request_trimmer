@@ -51,15 +51,19 @@ But any middleware running before the route match still gets untrimmed request.
 Request body  ( Before request_trimmer )
 ```json
 {
-    "arg1":{
+    "arg1": {
         "arg2": [
             {
                 "arg3": " val3 ",
-                "arg4": "   val4 "
+                "arg4": "   val4 ",
+                "arg5": [
+                    "val5 ",
+                    "  val5.1   "
+                ]
             }
         ]
     },
-    "arg5": " val5  "
+    "arg6": "    val6   "
 }
 ```
 Request body( After request_trimmer )
@@ -70,11 +74,15 @@ Request body( After request_trimmer )
         "arg2": [
             {
                 "arg3": "val3",
-                "arg4": "val4"
+                "arg4": "val4",
+                "arg5": [
+                    "val5",
+                    "val5.1"
+                ]
             }
         ]
     },
-    "arg5": "val5"
+    "arg6": "val6"
 }
 ```
 
