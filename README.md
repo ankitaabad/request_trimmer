@@ -33,11 +33,12 @@ app.use(express.json());
 # trim request body and query.
 app.use(trim_all)
 ```
+Remember params are yet not available to the middleware so trim_all can't trim req.params.
+
 ```node
-# trim request body and query
-app.use(trim_all)
+# trim request body only
+app.use(trim_body)
 ```
-Remember params are yet not available to the middleware so trim_all won't trim req.params.
 
 ```node
 //trim request body,query and params
@@ -45,6 +46,7 @@ app.post("\posts\:id",trim_all,(req,res) => {...});
 ```
 we are using trim_all after route match so req.params are now available. This will trim request body,query and params.
 But any middleware running before the route match still gets untrimmed request.
+
 ## Example
 Request body  ( Before request_trimmer )
 ```json
