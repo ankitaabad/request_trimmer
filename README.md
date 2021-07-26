@@ -70,7 +70,7 @@ Request body( After request_trimmer )
         "arg2": [
             {
                 "arg3": "val3",
-                "arg4": "val4."
+                "arg4": "val4"
             }
         ]
     },
