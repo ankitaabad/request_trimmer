@@ -1,0 +1,20 @@
+{
+  "name": "request_trimmer",
+  "version": "1.0.0",
+  "description": "It provides express middlewares to trim request body, query and params. It also provides a utility to trim strings in any object. ",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": ["trim","request trimmer","express","middleware","trim request"],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ankitaabad/request_trimmer.git"
+  },
+  "author": "Ankit Aabad <ankit.aabad1@gmail.com> (https://github.com/ankitaabad) ",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ankitaabad/request_trimmer/issues"
+  },
+  "homepage": "https://github.com/ankitaabad/request_trimmer#readme"
+}

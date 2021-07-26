@@ -8,13 +8,12 @@ request_trimmer provides you 4 express middlewares:
  - trim_params  
 
 And one utility function:
-
-    - trim_util : This utility function can be used to trim any object. I generally use it when I receive data from some external apis.
+- trim_util : This utility function can be used to trim any object. I generally use it when I receive data from some external apis.
 
 
 ## Installation
 
-Use the package manager [npm](www.npm.com) to install the package
+Use the package manager npm to install the package
 
 ```bash
 npm i request_trimmer
